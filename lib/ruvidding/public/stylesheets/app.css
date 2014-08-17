@@ -16,12 +16,11 @@ h3 {
 
 .container {
   width: 100%;
+  text-align: center;
 }
 
 #local-video {
   width: 100%;
-
-  text-align: center;
 }
 
 #local-video video {
