@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Ruvidding::VERSION
   spec.authors       = ["TJ Taylor"]
   spec.email         = ["dugancathal@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{RTC on Sinatra}
+  spec.description   = %q{}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -17,6 +17,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
+
+  spec.add_dependency 'sinatra', '~> 1.4.5'
+  spec.add_dependency 'thin', '~> 1.6.2'
+  spec.add_dependency 'faye', '~> 1.0.3'
+
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
