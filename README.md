@@ -1,30 +1,35 @@
-# Ruvidding
+# ruvidding
 
-TODO: Write a gem description
+An RTC app using Sinatra and Faye.
+
+There are so many node.js-based RTC apps, I thought it was time for a little
+something different.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+While technically, this is a gem, it's really only for organization. To install:
 
-```ruby
-gem 'ruvidding'
-```
+    ```bash
+    # Clone the repo
+    git clone https://github.com/dugancathal/ruvidding.git
+    cd ruvidding
 
-And then execute:
+    # Install the dependencies
+    bundle install
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ruvidding
+    # Run the specs
+    rspec spec
+    ```
 
 ## Usage
 
-TODO: Write usage instructions here
+Boot the app.
+
+    rackup -p "$PORT" -E production config.ru
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/ruvidding/fork )
+1. Fork it ( https://github.com/dugancathal/ruvidding/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
