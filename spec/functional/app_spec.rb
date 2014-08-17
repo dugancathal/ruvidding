@@ -7,9 +7,10 @@ RSpec.describe Ruvidding::App do
     Ruvidding::App
   end
 
-  it 'renders the index template' do
-    get '/'
-    expect(last_response).to be_ok
-    expect(last_response.body).to match(/Hey/)
+  describe '/' do
+    it 'has an element for the local-video' do
+      get '/'
+      expect(last_response.body).to match(/<div id='local-video'>/)
+    end
   end
 end

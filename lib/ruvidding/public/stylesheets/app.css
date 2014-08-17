@@ -1,0 +1,26 @@
+body {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  border-bottom: 1px solid #000066;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+#local-video {
+  width: 100%;
+
+  text-align: center;
+}
+
+#local-video video {
+  width: 200px;
+  height: auto;
+}
