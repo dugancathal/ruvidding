@@ -3,11 +3,11 @@
   %head
     %title ruvidding?
     %link(href='/stylesheets/app.css' rel='stylesheet' type='text/css')
-    %script(src='//code.jquery.com/jquery-2.1.1.min.js' type='text/javascript')
+    %script(src='/javascripts/jquery.js' type='text/javascript')
     %script(src='/javascripts/adapter.js' type='text/javascript')
     %script(src='/faye/faye.js' type='text/javascript')
-    %script(src='/javascripts/signaller.js' type='text/javascript')
-    %script(src='/javascripts/app.js' type='text/javascript')
-  %body
+    %script(src='/javascripts/angular.js' type='text/javascript')
+    %script(src='/javascripts/angular_app.js' type='text/javascript')
+  %body(ng-app='ruvidding' ng-controller='MainCtrl')
     %h1 R U Vidding?
     = yield

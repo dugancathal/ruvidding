@@ -1,3 +1,4 @@
 .container
   %h3= @vid_name
-  #local-video
+  #remote-videos
+    %peer-video(ng-repeat='stream in streams' stream='stream')

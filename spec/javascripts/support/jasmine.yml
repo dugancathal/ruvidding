@@ -11,7 +11,8 @@
 #   - dist/**/*.js
 #
 src_files:
-  - lib/ruvidding/public/javascripts/signaller.js
+  - lib/ruvidding/public/javascripts/**/*.js
+  - "!lib/ruvidding/public/javascripts/app.js"
 
 # stylesheets
 #
