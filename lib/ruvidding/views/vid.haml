@@ -1,4 +1,4 @@
-.container
+.container(ng-app='ruvidding' ng-controller='MainCtrl')
   %h3= @vid_name
   #remote-videos
     %peer-video(ng-repeat='stream in streams' stream='stream')
