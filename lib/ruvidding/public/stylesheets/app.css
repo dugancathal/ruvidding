@@ -61,3 +61,28 @@ input {
 input:focus {
     outline: none;
 }
+
+.main {
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+#videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+peer-video {
+    display: inline-block;
+    width: 50%;
+}
+
+peer-video > video {
+    flex-basis: auto;
+    flex-grow: 1;
+
+    display: inline-block;
+    width: 100%;
+}
