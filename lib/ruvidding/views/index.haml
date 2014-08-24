@@ -1,7 +1,7 @@
 .container
   #local-video
   %form#name-form(action='/start' method='post')
-    %label(for='vid-name') Vid Name
-    %input#vid-name(type='text' name='vid-name')
-    %button(type='submit') Go!
+    .input-group
+      %input#vid-name(type='text' name='vid-name' placeholder='Vid Name' required=true)
+      %button(type='submit') Go!
 
