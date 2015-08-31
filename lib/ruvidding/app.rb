@@ -31,6 +31,7 @@ module Ruvidding
           secure: 1
         }).body
       )
+      p result
       content_type 'application/json'
       Array((result['d'] || {})['iceServers']).to_json
     end
