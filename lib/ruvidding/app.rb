@@ -10,8 +10,8 @@ module Ruvidding
       haml :index
     end
 
-    get '.well-known/acme-challenge/-vVHzl7iOwqRCr1ZvpgOTGMhXq4fp4XPEwTKrXoPH0k' do
-      '-vVHzl7iOwqRCr1ZvpgOTGMhXq4fp4XPEwTKrXoPH0k.9FEjhUfQZlT6ilwUgvfEPAKZ6Rej-FyTGIlyqSdxRm0'
+    get '/.well-known/acme-challenge/je9xKNjKTJfDXMJN0qdHidQaYC6CbyCfuqcKbmqbxmU' do
+      'je9xKNjKTJfDXMJN0qdHidQaYC6CbyCfuqcKbmqbxmU.9FEjhUfQZlT6ilwUgvfEPAKZ6Rej-FyTGIlyqSdxRm0'
     end
 
     post '/start' do
