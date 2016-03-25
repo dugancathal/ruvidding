@@ -10,6 +10,10 @@ module Ruvidding
       haml :index
     end
 
+    get '.well-known/acme-challenge/-vVHzl7iOwqRCr1ZvpgOTGMhXq4fp4XPEwTKrXoPH0k' do
+      '-vVHzl7iOwqRCr1ZvpgOTGMhXq4fp4XPEwTKrXoPH0k.9FEjhUfQZlT6ilwUgvfEPAKZ6Rej-FyTGIlyqSdxRm0'
+    end
+
     post '/start' do
       return status 400 unless params['vid-name']
       redirect to("/vids/#{params['vid-name']}")
